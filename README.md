@@ -34,6 +34,16 @@ The code maps the RGB565 data bits to these GPIOs. The bit order is the RGB565 l
 
 Confirm the pinout against your specific board and VGA interface before wiring. The project uses 640 × 480 pixels, negative HSYNC/VSYNC, 24 MHz pixel clock, and 57.143 Hz vertical refresh (800 × 525 total timing). These timings and pins are defined in `src/main.cpp`.
 
+### PCB fabrication and assembly files
+
+The `schematics/` folder contains the board fabrication and assembly files:
+
+- [Gerber package](schematics/Gerber_Esp32s3_Vga.zip) - zipped PCB manufacturing layers, board outline, and plated/non-plated drill files. Upload this ZIP to your PCB manufacturer's Gerber review/order tool.
+- [Bill of Materials (BOM)](schematics/BOM_Board1_PCB1_2026-10-22.xlsx) - component list for the board.
+- [Pick-and-place file](schematics/PickAndPlace_PCB1_2026_10_22.xlsx) - component placement data for assembly.
+
+Check the Gerbers and BOM against the board revision and your manufacturer's requirements before ordering or assembly.
+
 ## Repository layout
 
 ```text
@@ -52,6 +62,10 @@ VGA_Dashboard/
 │   ├── dashboard_ui.cpp                # Layout, colors, labels, and image widget
 │   └── camera_view.cpp                 # HTTP snapshot, Digest auth, JPEG decode/scaling
 ├── scripts/embed_managed_certs.py      # Embeds upstream public CA certificates at build time
+├── schematics/
+│   ├── Gerber_Esp32s3_Vga.zip             # PCB manufacturing layers and drill data
+│   ├── BOM_Board1_PCB1_2026-10-22.xlsx    # Bill of materials
+│   └── PickAndPlace_PCB1_2026_10_22.xlsx  # Assembly placement data
 ├── certs/                              # Public upstream CA certificates; not private keys
 ├── default_16MB.csv                    # Flash partition layout
 ├── platformio.ini                      # PlatformIO board, framework, library, and build settings
