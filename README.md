@@ -2,6 +2,18 @@
 
 A retro-style, 640 × 480 Home Assistant dashboard for an ESP32-S3 board with 16 MB flash and 8 MB PSRAM. It renders an LVGL interface to a 16-bit RGB565 VGA output, polls Home Assistant over Wi-Fi, and displays a JPEG snapshot from a Dahua-compatible DVR/camera.
 
+<p align="center">
+  <a href="https://www.youtube.com/@TechPanda-4k">Visit the TechPanda YouTube Channel</a>
+</p>
+
+<p> 
+  <p align="center">
+  <img src="https://github.com/arslansadiq87/techpanda-inventory/blob/master/PCBlogo.png" alt="JLCPCB logo" width="150">
+</p>
+  New users receive $123 in coupons. Order now:  https://jlcpcb.com?from=PPOAXWDGOGZXJOSA  . JLCPCB provides seamless workflows, transparent pricing, and verified quality for 1-4 layer PCBs – design in EDA, order PCB 
+</p>
+
+
 > **Camera behavior:** this firmware requests a JPEG snapshot over HTTP. It does not open or decode an RTSP video stream. The RTSP port and substream settings some DVRs expose are not used by this project.
 
 ## What it does
