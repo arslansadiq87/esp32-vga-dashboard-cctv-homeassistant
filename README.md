@@ -1,3 +1,25 @@
+<div align="center">
+
+  <img src="https://raw.githubusercontent.com/arslansadiq87/circuit-studio/main/techpanda%20logo.png" alt="TechPanda Logo" width="150">
+
+  <h1>Tech Panda Labs</h1>
+
+  <p>
+    Create 3D electronics wiring diagrams, connect components,<br>
+    and generate animated wiring tutorials.
+  </p>
+
+  <p>
+    <a href="https://circuit.techpandalabs.com">
+      <img src="https://img.shields.io/badge/Launch-Circuit_Studio-2563EB?style=for-the-badge" alt="Launch Circuit Studio">
+    </a>
+    <a href="https://techpandalabs.com">
+      <img src="https://img.shields.io/badge/Explore-TechPanda_Labs-374151?style=for-the-badge" alt="Explore TechPanda Labs">
+    </a>
+  </p>
+
+</div>
+
 ﻿# VGA Dashboard
 
 A retro-style, 640 × 480 Home Assistant dashboard for an ESP32-S3 board with 16 MB flash and 8 MB PSRAM. It renders an LVGL interface to a 16-bit RGB565 VGA output, polls Home Assistant over Wi-Fi, and displays a JPEG snapshot from a Dahua-compatible DVR/camera.
